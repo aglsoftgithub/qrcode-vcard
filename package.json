@@ -1,0 +1,24 @@
+{
+  "name": "qrcode-vcard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aglsoftgithub/qrcode-vcard.git"
+  },
+  "keywords": [
+    "qrcode",
+    "vcard",
+    "generate"
+  ],
+  "author": "Adrien Lagrange",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aglsoftgithub/qrcode-vcard/issues"
+  },
+  "homepage": "https://github.com/aglsoftgithub/qrcode-vcard#readme"
+}
