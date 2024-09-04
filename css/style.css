@@ -26,7 +26,7 @@ body{
 }
 
 #content{
-	padding: 25px;
+	padding: 30px;
 	font-size: 25px;
 	border-radius: 16px;
 	background: rgba(0, 0, 0, .1);
@@ -36,8 +36,8 @@ body{
 
 #content #form{
 	width: inherit;
-	padding: 10px;
-	font-size: 21px;
+	padding: 30px;
+	font-size: 18px;
 	color: #fff;
 }
 
@@ -45,23 +45,57 @@ body{
 	margin-bottom: 12px;
 }
 
-input{
-	width: 90%;
+input[type="text"],input[type="email"]{
+	color: #eee;
+	width: 92%;
+	height: 50px;
 	border: none;
-	padding: 12px;
+	font-style: italic;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	padding: 0 35px 0 5px;
+	background: transparent;
 	font-size: 16px;
-	background: none;
-	color: #fff;
-	border-bottom: 1px solid #ddd;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
 }
 
-input:focus, input:active{
-	border: none;
-	border-style: none;
+input ~ label{
+	position: relative;
+	top: -40px;
+	left: 5px;
+	transform: translateY(-50%);
+	transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+	top: -60px;;
 }
 
 button{
+	width: 24%;
 	padding: 9px;
 	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+button:hover{
+	color: #fff;
+	background: none;
+	transition: .5s;
+	border: 2px solid #fff;
 }
 
+/*button[type="reset"]{
+	color: #fff;
+	padding: 9px;
+	font-size: 16px;
+	background: none;
+	border: 2px solid #fff;
+}
+button[type="reset"]:hover{
+	color: #000;
+	background: #fff;
+	transition: .5s;
+}*/

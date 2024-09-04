@@ -13,27 +13,28 @@
 		
 		<div id="container">
 			<div id="content">
-				<h2>VCard Form Generator</h2>
+				<h2>QRCode for VCard Form</h2>
 
 				<form id="form" method="POST" action="php/qrcode-vcard.php">
-					<div class="form-group">
-						<label for="name">Nom Complet</label>
-						<input type="text" id="name" name="name" required autofocus>
-					</div>
 
 					<div class="form-group">
-						<label for="phone">Telephone</label>
+						<input type="text" id="name" name="name" required>
+						<label for="name">Nom complet</label>
+					</div> 
+
+					<div class="form-group">
 						<input type="text" id="phone" name="phone" required>
+						<label for="phone">Telephone</label>
 					</div>
 
 					<div class="form-group">
-						<label for="email">Email</label>
 						<input type="email" id="email" name="email" required>
+						<label for="email">Email</label>
 					</div>
 
 					<div class="form-group">
+						<input type="text" id="localization" name="localization" required>
 						<label for="localization">Localisation</label>
-						<input type="text" id="localization" name="localization">
 					</div>
 
 					<div class="form-group">
