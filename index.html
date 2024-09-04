@@ -15,20 +15,20 @@
 			<div id="content">
 				<h2>VCard Form Generator</h2>
 
-				<div id="form">
+				<form id="form" method="POST" action="php/qrcode-vcard.php">
 					<div class="form-group">
 						<label for="name">Nom Complet</label>
-						<input type="text" id="name" name="name">
+						<input type="text" id="name" name="name" required autofocus>
 					</div>
 
 					<div class="form-group">
-						<label for="telephone">Telephone</label>
-						<input type="text" id="telephone" name="telephone">
+						<label for="phone">Telephone</label>
+						<input type="text" id="phone" name="phone" required>
 					</div>
 
 					<div class="form-group">
 						<label for="email">Email</label>
-						<input type="email" id="email" name="email">
+						<input type="email" id="email" name="email" required>
 					</div>
 
 					<div class="form-group">
@@ -41,7 +41,7 @@
 						<button type="reset">Effacer</button>
 					</div>
 
-				</div>			
+				</form>			
 			</div>
 		</div>
 
